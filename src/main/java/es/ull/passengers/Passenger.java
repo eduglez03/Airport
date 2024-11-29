@@ -100,20 +100,21 @@ public class Passenger {
      * @throw RuntimeException Si no se puede eliminar al pasajero de su vuelo anterior
      *                         o agregarlo al nuevo vuelo.
      */
-    public void joinFlight(Flight flight) {
+    public void joinFlight(Flight flight) throws PassengerOperationException {
         Flight previousFlight = this.flight;
         if (null != previousFlight) {
             if (!previousFlight.removePassenger(this)) {
-                throw new RuntimeException("Cannot remove passenger");
+                throw new PassengerOperationException("Cannot remove passenger");
             }
         }
         setFlight(flight);
         if (null != flight) {
             if (!flight.addPassenger(this)) {
-                throw new RuntimeException("Cannot add passenger");
+                throw new PassengerOperationException("Cannot add passenger");
             }
         }
     }
+
 
     /**
      * @brief Establece el vuelo asociado al pasajero.
