@@ -1,4 +1,4 @@
 var searchData=
 [
-  ['flight_0',['Flight',['../classes_1_1ull_1_1flights_1_1_flight.html#aa5ad30bdd0beaab1b4eee82226e14149',1,'es::ull::flights::Flight']]]
+  ['joinflight_0',['joinFlight',['../classes_1_1ull_1_1passengers_1_1_passenger.html#ab502f5a4d9dde76595f7d1781683b08e',1,'es::ull::passengers::Passenger']]]
 ];
