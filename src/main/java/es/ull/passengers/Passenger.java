@@ -134,3 +134,4 @@ public class Passenger {
         return "Passenger " + getName() + " with identifier: " + getIdentifier() + " from " + getCountryCode();
     }
 }
+
