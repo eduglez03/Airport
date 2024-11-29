@@ -4,10 +4,11 @@
          xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
     <modelVersion>4.0.0</modelVersion>
     <groupId>com.manning.junitbook</groupId>
-    <artifactId>ch13-continuous</artifactId>
+    <artifactId>Airport</artifactId>
     <version>1.0-SNAPSHOT</version>
 
-    <name>ch13-continuous</name>
+    <name>Airport</name>
+
 
     <properties>
         <!-- Configuración de Java -->
@@ -15,11 +16,12 @@
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
 
-        <!-- Propiedades de SonarCloud -->
-        <sonar.projectKey>${env.SONAR_PROJECT_KEY}</sonar.projectKey>
-        <sonar.organization>${env.SONAR_ORG}</sonar.organization>
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.login>${env.SONAR_TOKEN}</sonar.login>
+            <!-- Configuración de SonarCloud -->
+            <sonar.projectKey>eduglez03:Airport</sonar.projectKey>  <!-- Cambia esto a tu clave de proyecto en SonarCloud -->
+            <sonar.organization>eduglez03</sonar.organization>  <!-- Tu organización en SonarCloud -->
+            <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+            <sonar.login>2389189df9f76db3ced11ce19e33d0aa39b66405</sonar.login>  <!-- Tu token de SonarCloud -->
+
     </properties>
 
     <dependencies>
