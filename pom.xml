@@ -16,10 +16,10 @@
         <maven.compiler.target>17</maven.compiler.target>
 
         <!-- Propiedades de SonarCloud -->
-        <sonar.projectKey>your_project_key</sonar.projectKey>
-        <sonar.organization>your_organization</sonar.organization>
+        <sonar.projectKey>${env.SONAR_PROJECT_KEY}</sonar.projectKey>
+        <sonar.organization>${env.SONAR_ORG}</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.login>your_sonarcloud_token</sonar.login>
+        <sonar.login>${env.SONAR_TOKEN}</sonar.login>
     </properties>
 
     <dependencies>
