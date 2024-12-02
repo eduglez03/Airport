@@ -3,23 +3,119 @@
 \doxysubsubsection*{Public Member Functions}
 \begin{DoxyCompactItemize}
 \item 
-\Hypertarget{classes_1_1ull_1_1flights_1_1_flight_aa5ad30bdd0beaab1b4eee82226e14149}\label{classes_1_1ull_1_1flights_1_1_flight_aa5ad30bdd0beaab1b4eee82226e14149} 
-{\bfseries Flight} (String flight\+Number, int seats)
-\item 
-\Hypertarget{classes_1_1ull_1_1flights_1_1_flight_a54acb8002451233c0627f67d7da6cdff}\label{classes_1_1ull_1_1flights_1_1_flight_a54acb8002451233c0627f67d7da6cdff} 
-String {\bfseries get\+Flight\+Number} ()
-\item 
-\Hypertarget{classes_1_1ull_1_1flights_1_1_flight_a187a56be3a80aeed3f86f5af788cefe4}\label{classes_1_1ull_1_1flights_1_1_flight_a187a56be3a80aeed3f86f5af788cefe4} 
-int {\bfseries get\+Number\+Of\+Passengers} ()
-\item 
-\Hypertarget{classes_1_1ull_1_1flights_1_1_flight_af91e68d0b5783e3593f4dac614e8f6df}\label{classes_1_1ull_1_1flights_1_1_flight_af91e68d0b5783e3593f4dac614e8f6df} 
-boolean {\bfseries add\+Passenger} (\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}} passenger)
-\item 
-\Hypertarget{classes_1_1ull_1_1flights_1_1_flight_aae162ee591aaab6ea905e8eb116b0b5a}\label{classes_1_1ull_1_1flights_1_1_flight_aae162ee591aaab6ea905e8eb116b0b5a} 
-boolean {\bfseries remove\+Passenger} (\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}} passenger)
-\end{DoxyCompactItemize}
+\mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight_aa5ad30bdd0beaab1b4eee82226e14149}{Flight}} (String flight\+Number, int seats)
+\begin{DoxyCompactList}\small\item\em Constructor de la clase \doxylink{classes_1_1ull_1_1flights_1_1_flight}{Flight}. \end{DoxyCompactList}\item 
+String \mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight_a54acb8002451233c0627f67d7da6cdff}{get\+Flight\+Number}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el número del vuelo. \end{DoxyCompactList}\item 
+int \mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight_a187a56be3a80aeed3f86f5af788cefe4}{get\+Number\+Of\+Passengers}} ()
+\begin{DoxyCompactList}\small\item\em Obtiene el número de pasajeros actuales en el vuelo. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight_af91e68d0b5783e3593f4dac614e8f6df}{add\+Passenger}} (\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}} passenger)
+\begin{DoxyCompactList}\small\item\em Agrega un pasajero al vuelo. \end{DoxyCompactList}\item 
+boolean \mbox{\hyperlink{classes_1_1ull_1_1flights_1_1_flight_aae162ee591aaab6ea905e8eb116b0b5a}{remove\+Passenger}} (\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}} passenger)
+\begin{DoxyCompactList}\small\item\em Elimina un pasajero del vuelo. \end{DoxyCompactList}\end{DoxyCompactItemize}
+
+
+\doxysubsection{Constructor \& Destructor Documentation}
+\Hypertarget{classes_1_1ull_1_1flights_1_1_flight_aa5ad30bdd0beaab1b4eee82226e14149}\index{es.ull.flights.Flight@{es.ull.flights.Flight}!Flight@{Flight}}
+\index{Flight@{Flight}!es.ull.flights.Flight@{es.ull.flights.Flight}}
+\doxysubsubsection{\texorpdfstring{Flight()}{Flight()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1flights_1_1_flight_aa5ad30bdd0beaab1b4eee82226e14149} 
+es.\+ull.\+flights.\+Flight.\+Flight (\begin{DoxyParamCaption}\item[{String}]{flight\+Number}{, }\item[{int}]{seats}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Constructor de la clase \doxylink{classes_1_1ull_1_1flights_1_1_flight}{Flight}. 
+
+Inicializa un vuelo con el número de vuelo y capacidad de asientos.
+
+
+\begin{DoxyParams}{Parameters}
+{\em flight\+Number} & Número único del vuelo (debe seguir el formato "{}\+XX1234"{}). \\
+\hline
+{\em seats} & Número máximo de asientos del vuelo.\\
+\hline
+\end{DoxyParams}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & Si el número de vuelo no es válido. \\
+\hline
+\end{DoxyExceptions}
+
+
+\doxysubsection{Member Function Documentation}
+\Hypertarget{classes_1_1ull_1_1flights_1_1_flight_af91e68d0b5783e3593f4dac614e8f6df}\index{es.ull.flights.Flight@{es.ull.flights.Flight}!addPassenger@{addPassenger}}
+\index{addPassenger@{addPassenger}!es.ull.flights.Flight@{es.ull.flights.Flight}}
+\doxysubsubsection{\texorpdfstring{addPassenger()}{addPassenger()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1flights_1_1_flight_af91e68d0b5783e3593f4dac614e8f6df} 
+boolean es.\+ull.\+flights.\+Flight.\+add\+Passenger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}}}]{passenger}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Agrega un pasajero al vuelo. 
+
+Registra un pasajero en el vuelo si hay asientos disponibles.
+
+
+\begin{DoxyParams}{Parameters}
+{\em passenger} & Instancia del pasajero que se desea agregar al vuelo.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si el pasajero fue agregado correctamente.
+\end{DoxyReturn}
+
+\begin{DoxyExceptions}{Exceptions}
+{\em Runtime\+Exception} & Si no hay suficientes asientos disponibles. \\
+\hline
+\end{DoxyExceptions}
+\Hypertarget{classes_1_1ull_1_1flights_1_1_flight_a54acb8002451233c0627f67d7da6cdff}\index{es.ull.flights.Flight@{es.ull.flights.Flight}!getFlightNumber@{getFlightNumber}}
+\index{getFlightNumber@{getFlightNumber}!es.ull.flights.Flight@{es.ull.flights.Flight}}
+\doxysubsubsection{\texorpdfstring{getFlightNumber()}{getFlightNumber()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1flights_1_1_flight_a54acb8002451233c0627f67d7da6cdff} 
+String es.\+ull.\+flights.\+Flight.\+get\+Flight\+Number (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el número del vuelo. 
+
+\begin{DoxyReturn}{Returns}
+Número único del vuelo. 
+\end{DoxyReturn}
+\Hypertarget{classes_1_1ull_1_1flights_1_1_flight_a187a56be3a80aeed3f86f5af788cefe4}\index{es.ull.flights.Flight@{es.ull.flights.Flight}!getNumberOfPassengers@{getNumberOfPassengers}}
+\index{getNumberOfPassengers@{getNumberOfPassengers}!es.ull.flights.Flight@{es.ull.flights.Flight}}
+\doxysubsubsection{\texorpdfstring{getNumberOfPassengers()}{getNumberOfPassengers()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1flights_1_1_flight_a187a56be3a80aeed3f86f5af788cefe4} 
+int es.\+ull.\+flights.\+Flight.\+get\+Number\+Of\+Passengers (\begin{DoxyParamCaption}{}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Obtiene el número de pasajeros actuales en el vuelo. 
+
+\begin{DoxyReturn}{Returns}
+Cantidad de pasajeros registrados en el vuelo. 
+\end{DoxyReturn}
+\Hypertarget{classes_1_1ull_1_1flights_1_1_flight_aae162ee591aaab6ea905e8eb116b0b5a}\index{es.ull.flights.Flight@{es.ull.flights.Flight}!removePassenger@{removePassenger}}
+\index{removePassenger@{removePassenger}!es.ull.flights.Flight@{es.ull.flights.Flight}}
+\doxysubsubsection{\texorpdfstring{removePassenger()}{removePassenger()}}
+{\footnotesize\ttfamily \label{classes_1_1ull_1_1flights_1_1_flight_aae162ee591aaab6ea905e8eb116b0b5a} 
+boolean es.\+ull.\+flights.\+Flight.\+remove\+Passenger (\begin{DoxyParamCaption}\item[{\mbox{\hyperlink{classes_1_1ull_1_1passengers_1_1_passenger}{Passenger}}}]{passenger}{}\end{DoxyParamCaption})\hspace{0.3cm}{\ttfamily [inline]}}
+
+
+
+Elimina un pasajero del vuelo. 
+
+Remueve a un pasajero del vuelo y actualiza su estado.
+
+
+\begin{DoxyParams}{Parameters}
+{\em passenger} & Instancia del pasajero que se desea eliminar del vuelo.\\
+\hline
+\end{DoxyParams}
+\begin{DoxyReturn}{Returns}
+{\ttfamily true} si el pasajero fue eliminado correctamente. 
+\end{DoxyReturn}
 
 
 The documentation for this class was generated from the following file\+:\begin{DoxyCompactItemize}
 \item 
-src/main/java/es/ull/flights/Flight.\+java\end{DoxyCompactItemize}
+src/main/java/es/ull/flights/\mbox{\hyperlink{_flight_8java}{Flight.\+java}}\end{DoxyCompactItemize}
