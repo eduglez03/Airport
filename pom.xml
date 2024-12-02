@@ -9,9 +9,7 @@
     <packaging>pom</packaging>
 
     <name>Airport</name>
-    <modules>
-        <module>sonar-project.propertie</module>
-    </modules>
+
 
 
     <properties>
@@ -24,6 +22,7 @@
             <sonar.projectKey>eduglez03:Airport</sonar.projectKey>  <!-- Cambia esto a tu clave de proyecto en SonarCloud -->
             <sonar.organization>eduglez03</sonar.organization>  <!-- Tu organización en SonarCloud -->
             <sonar.host.url>https://sonarcloud.io</sonar.host.url>
+            <sonar.login>2389189df9f76db3ced11ce19e33d0aa39b66405</sonar.login>  <!-- Tu token de acceso en SonarCloud -->
 
     </properties>
 
