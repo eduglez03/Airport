@@ -9,10 +9,9 @@
     <packaging>pom</packaging>
 
     <name>Airport</name>
-
-
-
     <properties>
+        <!-- Configuración de cobertura JaCoCo para SonarCloud -->
+        <sonar.coverage.jacoco.xmlReportPaths>${project.build.directory}/jacoco-coverage/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
         <!-- Configuración de Java -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
