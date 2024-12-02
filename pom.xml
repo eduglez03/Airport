@@ -20,11 +20,6 @@
         <sonar.coverage.jacoco.xmlReportPaths>${project.build.directory}/jacoco-coverage/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
 
 
-        <!-- Configuración de SonarCloud -->
-        <sonar.projectKey>eduglez03:Airport</sonar.projectKey>  <!-- Cambia esto a tu clave de proyecto en SonarCloud -->
-        <sonar.organization>eduglez03</sonar.organization>  <!-- Tu organización en SonarCloud -->
-        <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.login>66e555e40942e456465c494c878f5e6dab2030cb</sonar.login>  <!-- Tu token de acceso en SonarCloud -->
     </properties>
 
     <dependencies>
