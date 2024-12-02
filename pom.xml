@@ -6,8 +6,12 @@
     <groupId>com.manning.junitbook</groupId>
     <artifactId>Airport</artifactId>
     <version>1.0-SNAPSHOT</version>
+    <packaging>pom</packaging>
 
     <name>Airport</name>
+    <modules>
+        <module>sonar-project.propertie</module>
+    </modules>
 
 
     <properties>
@@ -20,7 +24,6 @@
             <sonar.projectKey>eduglez03:Airport</sonar.projectKey>  <!-- Cambia esto a tu clave de proyecto en SonarCloud -->
             <sonar.organization>eduglez03</sonar.organization>  <!-- Tu organización en SonarCloud -->
             <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-            <sonar.login>2389189df9f76db3ced11ce19e33d0aa39b66405</sonar.login>  <!-- Tu token de SonarCloud -->
 
     </properties>
 
@@ -50,6 +53,14 @@
             <artifactId>slf4j-simple</artifactId>
             <version>2.0.9</version>
         </dependency>
+        <dependency>
+            <groupId>org.mockito</groupId>
+            <artifactId>mockito-core</artifactId>
+            <version>5.5.0</version> <!-- Versión más reciente -->
+            <scope>test</scope>
+        </dependency>
+
+
     </dependencies>
 
     <build>
