@@ -79,11 +79,22 @@
                 </configuration>
             </plugin>
             <plugin>
+                <groupId>org.sonarsource</groupId>
+                <artifactId>sonar-maven-plugin</artifactId>
+                <version>3.9.1.2184</version>
+            </plugin>
+            <plugin>
+                <groupId>org.apache.maven.plugins</groupId>
+                <artifactId>maven-surefire-plugin</artifactId>
+                <version>3.1.2</version>
+            </plugin>
+            <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.10</version>
                 <executions>
                     <execution>
+                        <id>prepare-agent</id>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
@@ -95,19 +106,14 @@
                             <goal>report</goal>
                         </goals>
                         <configuration>
-                            <reports>
-                                <xml>true</xml>
-                                <html>true</html>
-                            </reports>
+                            <outputDirectory>${project.build.directory}/jacoco-coverage-report</outputDirectory>
+                            <formats>
+                                <format>HTML</format>
+                                <format>XML</format>
+                            </formats>
                         </configuration>
                     </execution>
                 </executions>
-            </plugin>
-            <!-- Maven Surefire Plugin para pruebas -->
-            <plugin>
-                <groupId>org.apache.maven.plugins</groupId>
-                <artifactId>maven-surefire-plugin</artifactId>
-                <version>3.1.2</version>
             </plugin>
 
             <!-- SonarCloud -->
