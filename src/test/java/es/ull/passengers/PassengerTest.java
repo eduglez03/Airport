@@ -51,12 +51,6 @@ class PassengerTest {
     assertEquals(expected, passenger.toString());
   }
 
-
-
-
-
-
-
   @Test
   void testJoinFlightCannotRemovePassenger() {
     Passenger passenger = new Passenger("P123", "John Doe", "US");
