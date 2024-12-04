@@ -10,22 +10,14 @@
 
     <name>Airport</name>
     <properties>
-        <!-- Configuración de cobertura JaCoCo para SonarCloud -->
-        <sonar.coverage.jacoco.xmlReportPaths>${project.build.directory}/jacoco-coverage/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
-        <!-- Configuración de Java -->
         <project.build.sourceEncoding>UTF-8</project.build.sourceEncoding>
         <maven.compiler.source>17</maven.compiler.source>
         <maven.compiler.target>17</maven.compiler.target>
         <!-- Configuración de cobertura JaCoCo para SonarCloud -->
         <sonar.coverage.jacoco.xmlReportPaths>${project.build.directory}/jacoco-coverage/jacoco.xml</sonar.coverage.jacoco.xmlReportPaths>
-
-        <!-- Configuración de SonarCloud -->
-        <sonar.projectKey>eduglez03:Airport</sonar.projectKey>  <!-- Cambia esto a tu clave de proyecto en SonarCloud -->
-        <sonar.organization>eduglez03</sonar.organization>  <!-- Tu organización en SonarCloud -->
+        <sonar.projectKey>eduglez03:Airport</sonar.projectKey>
+        <sonar.organization>eduglez03</sonar.organization>
         <sonar.host.url>https://sonarcloud.io</sonar.host.url>
-        <sonar.coverage.jacoco.xmlReportPaths>
-            ../app-it/target/site/jacoco-aggregate/jacoco.xml
-        </sonar.coverage.jacoco.xmlReportPaths>
     </properties>
 
     <build>
