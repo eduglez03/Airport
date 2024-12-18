@@ -175,26 +175,38 @@
                 <artifactId>maven-surefire-plugin</artifactId>
                 <version>3.0.0-M7</version>
             </plugin>
-
+            <!-- Plugin JaCoCo para la cobertura de pruebas -->
             <plugin>
                 <groupId>org.jacoco</groupId>
                 <artifactId>jacoco-maven-plugin</artifactId>
                 <version>0.8.7</version>
+                <configuration>
+                    <!-- Carpeta personalizada para reportes -->
+                    <outputDirectory>${project.build.directory}/jacoco-coverage</outputDirectory>
+                    <append>false</append>
+                </configuration>
                 <executions>
+                    <!-- Preparar el agente JaCoCo -->
                     <execution>
+                        <id>prepare-agent</id>
+                        <phase>initialize</phase>
                         <goals>
                             <goal>prepare-agent</goal>
                         </goals>
                     </execution>
+
+                    <!-- Ejecutar el reporte de cobertura -->
                     <execution>
                         <id>report</id>
-                        <phase>verify</phase>
+                        <phase>package</phase>
                         <goals>
                             <goal>report</goal>
                         </goals>
                     </execution>
                 </executions>
             </plugin>
+
+
 
             <plugin>
                 <groupId>org.codehaus.mojo</groupId>
