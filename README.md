@@ -7,6 +7,7 @@
 Este proyecto implementa un sistema de gestión de pasajeros y vuelos en Java, diseñado para modelar las operaciones básicas de una aerolínea, como la asignación de pasajeros a vuelos, la verificación de capacidad, y el manejo de excepciones en casos de errores.
 
 El desarrollo forma parte de la asignatura Laboratorio y Desarrollo de Herramientas, aplicando herramientas de análisis, documentación y control de dependencias como Maven, JUnit, y SonarCloud, para garantizar la calidad, testeo y documentación del código.
+Por otra parte, se hace uso de este proyecto para llevar a cabo sobre él labores de integración continua mediante el uso de la herramienta de CI Jenkins
 
 ## Características
 
